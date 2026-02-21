@@ -15,8 +15,9 @@ staticfiles/ local_settings.py
 # Uncomment the next line if you want to ignore all migrations (not recommended for team projects)
 */migrations/
 # Environments
-.env venv/ ENV/
+.env/ venv/ ENV/
 env/
+.env
 .venv/
 # IDEs
 .vscode/
