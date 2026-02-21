@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>Products</h1>
+
+<div class="products">
+    {% for product in products %}
+        <div class="card">
+            <img src="{{ product.image.url }}">
+            <h3>{{ product.title }}</h3>
+            <p class="price">₹{{ product.price }}</p>
+            <button>View Details</button>
+        </div>
+    {% endfor %}
+</div>
+
+{% endblock %}
